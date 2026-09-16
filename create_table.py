@@ -29,7 +29,7 @@ try:
     if connection.is_connected():
         print("Successfully connected to RDS MySQL database")
         cursor = connection.cursor()
-        
+
         cursor.execute("SELECT DATABASE();")
         print(cursor.fetchone())
 
